@@ -10,13 +10,13 @@ import net.minecraft.text.Text;
 import net.minecraft.util.Identifier;
 
 public class ModItemGroups {
-//    public static final ItemGroup FOODSTUFFS_GROUP = Registry.register(Registries.ITEM_GROUP,
-//            Identifier.of(Foodstuffs.MOD_ID, "tomato"),
-//            FabricItemGroup.builder().displayName(Text.translatable("itemgroup.tomato"))
-//                    .icon(() -> new ItemStack(ModItems.TOMATO)).entries((displayContext, entries) -> {
-//
-//
-//                    }
+    public static final ItemGroup FOODSTUFFS_GROUP = Registry.register(Registries.ITEM_GROUP,
+            Identifier.of(Foodstuffs.MOD_ID, "tomato"),
+            FabricItemGroup.builder().displayName(Text.translatable("itemgroup.tomato"))
+                    .icon(() -> new ItemStack(ModItems.TOMATO)).entries((displayContext, entries) -> {
+                        entries.add(ModItems.TOMATO);
+
+                    }).build());
 
     public static void registerItemGroups() {
         Foodstuffs.LOGGER.info("Registering item groups for " + Foodstuffs.MOD_ID);
