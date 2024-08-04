@@ -1,0 +1,37 @@
+{
+	"schemaVersion": 1,
+	"id": "foodstuffs",
+	"version": "1.0-1.21",
+	"name": "Foodstuffs Plus",
+	"description": "Simple mod that adds many more foods and crops to the game.",
+	"authors": [
+		"BastionHub"
+	],
+	"contact": {
+		"homepage": "",
+		"sources": ""
+	},
+	"license": "CC0-1.0",
+	"icon": "assets/foodstuffs/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"net.bastionhub.foodstuffs.Foodstuffs"
+		],
+		"fabric-datagen": [
+			"net.bastionhub.foodstuffs.FoodstuffsDataGenerator"
+		]
+	},
+	"mixins": [
+		"foodstuffs.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.15.11",
+		"minecraft": "~1.21",
+		"java": ">=21",
+		"fabric-api": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}
