@@ -1,6 +1,7 @@
 package net.bastionhub.foodstuffs.datagen;
 
 
+import net.bastionhub.foodstuffs.item.ModItems;
 import net.fabricmc.fabric.api.datagen.v1.FabricDataOutput;
 import net.fabricmc.fabric.api.datagen.v1.provider.FabricModelProvider;
 import net.minecraft.data.client.*;
@@ -17,6 +18,6 @@ public class ModModelProvider extends FabricModelProvider {
 
     @Override
     public void generateItemModels(ItemModelGenerator itemModelGenerator) {
-
+        itemModelGenerator.register(ModItems.TOMATO, Models.GENERATED);
     }
 }
