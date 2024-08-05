@@ -12,7 +12,12 @@ import net.minecraft.util.Identifier;
 
 public class ModItems {
 
-    public static final Item TOMATO = registerItem("tomato", new Item(new Item.Settings()));
+    public static final Item TOMATO = registerItem("tomato", new Item(new Item.Settings().food(ModFoodComponents.TOMATO)));
+    public static final Item LETTUCE = registerItem("lettuce", new Item(new Item.Settings().food(ModFoodComponents.LETTUCE)));
+    public static final Item VEGETABLE_SALAD = registerItem("lettuce", new Item(new Item.Settings().food(ModFoodComponents.VEGETABLE_SALAD)));
+    public static final Item BUTTER = registerItem("butter", new Item(new Item.Settings()));
+    public static final Item UNCURED_VANILLA_BEAN = registerItem("uncured_vanilla_bean", new Item(new Item.Settings()));
+    public static final Item CURED_VANILLA_BEAN = registerItem("cured_vanilla_bean", new Item(new Item.Settings()));
 
 
     private static Item registerItem(String name, Item item) {
